@@ -8,7 +8,7 @@ public class PhonesBook {
         for (int i = 1000000; i <= 9999999; i++) {
             Matcher mtchr = pttrn.matcher(Integer.toString(i));
             if (mtchr.find()) {
-                strBldr.append("+7(988)").append(mtchr.group(1)).append("-").append(mtchr.group(2)).append(";\n");
+                strBldr.append("+7(999)").append(mtchr.group(1)).append("-").append(mtchr.group(2)).append(";\n");
             }
         }
     }
@@ -17,7 +17,7 @@ public class PhonesBook {
         Pattern pttrn = Pattern.compile("(\\d[7]{2})-([7]{4})");
         Matcher mtchr = pttrn.matcher(strBldr);
         while (mtchr.find()) {
-            System.out.println("GOLD!! +7(988)" + mtchr.group(1) + "-" + mtchr.group(2) + " GOLD!!; ");
+            System.out.println("GOLD!! +7(999)" + mtchr.group(1) + "-" + mtchr.group(2) + " GOLD!!; ");
         }
     }
 }
